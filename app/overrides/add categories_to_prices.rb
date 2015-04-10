@@ -15,7 +15,7 @@ Deface::Override.new(virtual_path: virtual_path,
 # Append categories w/ header
 Deface::Override.new(virtual_path: virtual_path,
 	name: 'append_categories',
-	insert_after: 'div.omega',
+	insert_after: 'fieldset',
 	text: %q{
 	  <% categories = Spree::PriceCategory.all %>
 	  <% categories.each do |category| %>
